@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.wigsdev.FocusMate.controller.TaskController">
+    <!-- Menú lateral -->
+    <left>
+        <VBox spacing="2" style="-fx-background-color: #f8f9fb; -fx-padding: 10 0 10 0;" prefWidth="180">
+            <Label text="wigusa" style="-fx-font-size: 16px; -fx-padding: 10 0 20 10; -fx-font-weight: bold;" />
+            <ListView fx:id="categoryList" VBox.vgrow="ALWAYS" />
+            <Button text="+ Add Project" style="-fx-background-color: #fff; -fx-text-fill: #e17055; -fx-font-weight: bold; -fx-padding: 8 0 8 0;" />
+        </VBox>
+    </left>
+
+    <!-- Panel central restaurado -->
+    <center>
+        <VBox spacing="12" style="-fx-background-color: #fff; -fx-padding: 20;">
+            <!-- Resumen del día -->
+            <HBox spacing="20">
+                <VBox alignment="CENTER" spacing="2">
+                    <Text text="0 m" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+                    <Label text="Estimated Time" />
+                </VBox>
+                <VBox alignment="CENTER" spacing="2">
+                    <Text text="0" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+                    <Label text="Tasks to be Completed" />
+                </VBox>
+                <VBox alignment="CENTER" spacing="2">
+                    <Text text="0 m" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+                    <Label text="Elapsed Time" />
+                </VBox>
+                <VBox alignment="CENTER" spacing="2">
+                    <Text text="0" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+                    <Label text="Completed Tasks" />
+                </VBox>
+            </HBox>
+            <!-- Lista de tareas -->
+            <TextField fx:id="addTaskField" promptText="Add a task to 'Tasks', press [Enter] to save" style="-fx-background-radius: 8; -fx-padding: 8;" />
+            <ListView fx:id="taskList" VBox.vgrow="ALWAYS" />
+            <Button text="Show Completed Tasks" style="-fx-background-color: #fff; -fx-text-fill: #636e72; -fx-padding: 6 0 6 0;" />
+        </VBox>
+    </center>
+
+    <!-- Widget Pomodoro minimizado en la esquina inferior derecha -->
+    <bottom>
+        <HBox fx:id="pomodoroMiniContainer" alignment="BOTTOM_RIGHT" style="-fx-padding: 0 20 16 0;" />
+    </bottom>
+</BorderPane>
