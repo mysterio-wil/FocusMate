@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.wigsdev.FocusMate.controller.PomodoroController">
+    <!-- Fondo eliminado temporalmente para evitar error de carga por imagen no encontrada o mal definida -->
+    <!-- <ImageView fitWidth="900" fitHeight="600" preserveRatio="false" opacity="0.35" image="@/background.jpg"/> -->
+
+    <!-- Layout principal -->
+    <BorderPane>
+        <!-- Top: Selector de tarea -->
+        <top>
+            <HBox alignment="CENTER" spacing="10" style="-fx-padding: 20 0 10 0;">
+                <ComboBox promptText="Selecciona una tarea..." prefWidth="300" />
+                <!-- Botón minimizar eliminado -->
+            </HBox>
+        </top>
+
+        <!-- Center: Temporizador circular -->
+        <center>
+            <VBox alignment="CENTER" spacing="20">
+                <StackPane>
+                    <Circle fx:id="circleTimer" radius="140" strokeWidth="10" stroke="#888" fill="transparent" />
+                    <Text fx:id="timerText" text="25:00" style="-fx-font-size: 48px; -fx-font-weight: bold;" />
+                </StackPane>
+                <Button fx:id="startButton" text="Iniciar enfoque" style="-fx-font-size: 18px; -fx-background-radius: 30; -fx-padding: 10 30;" />
+            </VBox>
+        </center>
+
+        <!-- Bottom: Opciones -->
+        <bottom>
+            <HBox alignment="CENTER" spacing="30" style="-fx-padding: 20 0 20 0;">
+                <Button text="Pantalla completa" />
+                <Button text="Modo temporizador" />
+                <Button text="Ruido blanco" />
+            </HBox>
+        </bottom>
+
+        <!-- Right: Paneles de información -->
+        <right>
+            <VBox alignment="TOP_CENTER" spacing="15" style="-fx-padding: 30 20 0 0;">
+                <TitledPane text="Tiempo de enfoque hoy" expanded="true">
+                    <Label text="0 m" />
+                </TitledPane>
+                <TitledPane text="Tareas de hoy" expanded="true">
+                    <Label text="Sin tareas" />
+                </TitledPane>
+                <TitledPane text="Historial de sesiones" expanded="true">
+                    <Label text="--" />
+                </TitledPane>
+            </VBox>
+        </right>
+    </BorderPane>
+</StackPane>
