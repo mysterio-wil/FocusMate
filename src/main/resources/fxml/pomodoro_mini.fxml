@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.wigsdev.FocusMate.controller.PomodoroMiniController"
+      alignment="CENTER" spacing="10" style="-fx-background-color: #232833; -fx-background-radius: 20; -fx-padding: 8 18 8 18; -fx-effect: dropshadow(gaussian, #222, 6, 0.2, 0, 2);">
+    <!-- Botón para maximizar el widget (esquina superior izquierda) -->
+    <Button fx:id="maximizeBtn" onAction="#onMaximizeBtnClick" style="-fx-background-radius: 50%; -fx-background-color: transparent; -fx-padding: 2 2 2 2; -fx-cursor: hand;">
+        <graphic>
+            <Label text="↑" style="-fx-font-size: 14px; -fx-text-fill: white;" /> <!-- Flecha hacia arriba -->
+        </graphic>
+    </Button>
+    <!-- Círculo con el número -->
+    <StackPane>
+        <Circle radius="24" stroke="#888" strokeWidth="3" fill="#181C23" />
+        <Text fx:id="miniTimerText" text="25" style="-fx-font-size: 22px; -fx-fill: white; -fx-font-weight: bold;" />
+    </StackPane>
+</HBox>
