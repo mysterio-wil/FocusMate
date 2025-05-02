@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<VBox spacing="12" style="-fx-background-color: #fff; -fx-padding: 20;">
+    <!-- Resumen del día -->
+    <HBox spacing="20">
+        <VBox alignment="CENTER" spacing="2">
+            <Text text="0 m" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label text="Estimated Time" />
+        </VBox>
+        <VBox alignment="CENTER" spacing="2">
+            <Text text="0" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label text="Tasks to be Completed" />
+        </VBox>
+        <VBox alignment="CENTER" spacing="2">
+            <Text text="0 m" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label text="Elapsed Time" />
+        </VBox>
+        <VBox alignment="CENTER" spacing="2">
+            <Text text="0" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label text="Completed Tasks" />
+        </VBox>
+    </HBox>
+    <!-- Lista de tareas -->
+    <TextField fx:id="addTaskField" promptText="Add a task to 'Tasks', press [Enter] to save" style="-fx-background-radius: 8; -fx-padding: 8;" />
+    <ListView fx:id="taskList" VBox.vgrow="ALWAYS" />
+    <Button text="Show Completed Tasks" style="-fx-background-color: #fff; -fx-text-fill: #636e72; -fx-padding: 6 0 6 0;" />
+</VBox>
