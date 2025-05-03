@@ -19,3 +19,5 @@ Aplicación de escritorio Pomodoro + gestor de tareas, hecha en Java con JavaFX.
 
 ---
 Estructura lista para escalar y migrar a otras plataformas en el futuro.
+
+<!-- Este es un comentario sobre la estructura de la aplicación FocusMate -->
