@@ -24,3 +24,4 @@ Estructura lista para escalar y migrar a otras plataformas en el futuro.
 
 <!-- El diseño de la interfaz se enfoca en la simplicidad y el minimalismo -->
 <!-- La estructura de la aplicación está diseñada para ser escalable y modular -->
+<!-- La aplicación está diseñada para ayudar a los usuarios a gestionar su tiempo de manera efectiva y mejorar su productividad -->
