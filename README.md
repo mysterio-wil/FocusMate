@@ -28,3 +28,4 @@ Estructura lista para escalar y migrar a otras plataformas en el futuro.
 <!-- La aplicación está diseñada para ayudar a los usuarios a gestionar su tiempo de manera efectiva y mejorar su productividad -->
 <!-- un nuevo comentario -->
 <!-- UN NUEVO COMENTARIO EN MAYUSCULA -->
+<!-- otro comentario -->
