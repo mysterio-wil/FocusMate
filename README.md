@@ -29,3 +29,4 @@ Estructura lista para escalar y migrar a otras plataformas en el futuro.
 <!-- un nuevo comentario -->
 <!-- UN NUEVO COMENTARIO EN MAYUSCULA -->
 <!-- otro comentario -->
+<!-- otro comentario -->
