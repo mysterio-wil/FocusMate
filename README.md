@@ -34,3 +34,4 @@ Estructura lista para escalar y migrar a otras plataformas en el futuro.
 <!-- este es otro comentario -->
 <!-- otro comentario.. -->
 <!-- otro comentario... -->
+<!-- otro comentario2... -->
